@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+
 public class Library {
 
     private ArrayList<String> booksList;
@@ -8,7 +9,6 @@ public class Library {
     private HashMap<String, String> booksLent;
     private HashMap<String, String> authorWithBook;
     private HashMap<String, Integer> bookCopies;
-
 
     public Library(ArrayList<String> list) {
         this.booksList = new ArrayList<>(list);
@@ -29,7 +29,7 @@ public class Library {
             System.out.println("There are no Books...");
         } else {
             for (String book : availableBookList) {
-                System.out.println("book name : " + book + " copies available : " + bookCopies.get(book));
+                System.out.println("book name : " + book + "      copies available : " + bookCopies.get(book));
             }
         }
 
@@ -73,7 +73,6 @@ public class Library {
             System.out.println("The book is not currently borrowed.");
         }
     }
-
 
     public void addBookToLibrary(String book, String authorName, int bookCopy) {
         booksList.add(book);

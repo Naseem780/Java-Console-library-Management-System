@@ -1,11 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class Main {
 
     public static void main(String[] args) {
-
 
         ArrayList<String> lib1 = new ArrayList<>();
         Library lib = new Library(lib1);
@@ -13,7 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            
+
             System.out.println("*".repeat(80));
             System.out.println("\nWelcome to library........................");
             System.out.println("1. Display Available books");
@@ -33,14 +31,12 @@ public class Main {
                 continue;
             }
 
-
             switch (userInput) {
 
                 case 1:
                     lib.displayAvailableBooks();
                     lib.continueOrQuit();
                     break;
-
 
                 case 2:
                     lib.displayAllBooks();
